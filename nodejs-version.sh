@@ -7,7 +7,8 @@ then
 fi
 # Get the node version
 NODE_VERSION=$($1/node -v)
-# Remove the 'v' starting it
+# Remove the 'v' starting it and the trailing newline
 NODE_VERSION=${NODE_VERSION#?};
+NODE_VERSION=${dt%};
 # Print the version
 echo $NODE_VERSION;
