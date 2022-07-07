@@ -7,4 +7,4 @@ then
 fi
 # Geth the OpenJDK version
 OPENJDK_VERSION=$($1/java --version | head -n 1 | awk '{print $2}');
-echo $OPENJDK_VERSION;
+echo -n $OPENJDK_VERSION;
